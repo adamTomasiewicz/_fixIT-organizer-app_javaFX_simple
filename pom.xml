@@ -11,10 +11,10 @@
 
     <!--PROPERTIES-->
     <properties>
-        <javafx-version>11</javafx-version><java.version>11</java.version>
+        <javafx-version>1.8</javafx-version><java.version>1.8</java.version>
         <sourceEncoding>UTF-8</sourceEncoding>  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <source>11</source><compile>11</compile> <target>11</target>
-        <maven.compiler.source>11</maven.compiler.source><maven.compiler.target>11</maven.compiler.target>
+        <source>1.8</source><compile>1.8</compile> <target>1.8</target>
+        <maven.compiler.source>1.8</maven.compiler.source><maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
     <!--MODULES-->
@@ -24,92 +24,91 @@
     <dependencies>
 
         <!--Java FX-->
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-controls</artifactId>
-            <version>11.0.2</version>
-        </dependency>
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-fxml</artifactId>
-            <version>11.0.2</version>
-        </dependency>
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-base</artifactId>
-            <version>11.0.2</version>
-        </dependency>
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-graphics</artifactId>
-            <version>11.0.2</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.openjfx</groupId>-->
+<!--            <artifactId>javafx-controls</artifactId>-->
+<!--            <version>1.8-ea+8</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.openjfx</groupId>-->
+<!--            <artifactId>javafx-fxml</artifactId>-->
+<!--            <version>1.8-ea+8</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.openjfx</groupId>-->
+<!--            <artifactId>javafx-base</artifactId>-->
+<!--            <version>1.8-ea+8</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.openjfx</groupId>-->
+<!--            <artifactId>javafx-graphics</artifactId>-->
+<!--            <version>1.8-ea+7</version>-->
+<!--        </dependency>-->
         <!--controlsFX-->
         <!--https://github.com/controlsfx/controlsfx/wiki/ControlsFX-Features-->
-<!--        <dependency>-->
-<!--            <groupId>org.controlsfx</groupId>-->
-<!--            <artifactId>controlsfx</artifactId>-->
-<!--            <version>11.0.1</version>-->
-<!--        </dependency>-->
-<!--        &lt;!&ndash;calendarFX&ndash;&gt;-->
-<!--        &lt;!&ndash;https://github.com/dlsc-software-consulting-gmbh/CalendarFX&ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>com.calendarfx</groupId>-->
-<!--            <artifactId>view</artifactId>-->
-<!--            <version>11.8.3</version>-->
-<!--        </dependency>-->
-<!--        &lt;!&ndash;formsFX&ndash;&gt;-->
-<!--        &lt;!&ndash;https://github.com/dlsc-software-consulting-gmbh/FormsFX&ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>com.dlsc.formsfx</groupId>-->
-<!--            <artifactId>formsfx-core</artifactId>-->
-<!--            <version>11.4.1</version>-->
-<!--        </dependency>-->
-        <!--pickerFX-->
-        <!-- https://github.com/dlsc-software-consulting-gmbh/PickerFX -->
-<!--        <dependency>-->
-<!--            <groupId>com.dlsc.pickerfx</groupId>-->
-<!--            <artifactId>pickerfx</artifactId>-->
-<!--            <version>1.0.2</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>com.dlsc.preferencesfx</groupId>-->
-<!--            <artifactId>preferencesfx-core</artifactId>-->
-<!--            <version>11.6.0</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.controlsfx</groupId>
+            <artifactId>controlsfx</artifactId>
+            <version>8.40.16</version>
+        </dependency>
+        <!--calendarFX-->
+        <!--https://github.com/dlsc-software-consulting-gmbh/CalendarFX-->
+        <dependency>
+            <groupId>com.calendarfx</groupId>
+            <artifactId>view</artifactId>
+            <version>8.6.1</version>
+        </dependency>
+        <!--formsFX-->
+        <!--https://github.com/dlsc-software-consulting-gmbh/FormsFX-->
+        <dependency>
+            <groupId>com.dlsc.formsfx</groupId>
+            <artifactId>formsfx-core</artifactId>
+            <version>8.4.0</version>
+        </dependency>
+<!--        pickerFX-->
+<!--         https://github.com/dlsc-software-consulting-gmbh/PickerFX-->
+        <dependency>
+            <groupId>com.dlsc.pickerfx</groupId>
+            <artifactId>pickerfx</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.dlsc.preferencesfx</groupId>
+            <artifactId>preferencesfx-core</artifactId>
+            <version>8.6.0</version>
+        </dependency>
         <!--JFoeniX-->
         <!-- https://mvnrepository.com/artifact/com.jfoenix/jfoenix -->
         <dependency>
             <groupId>com.jfoenix</groupId>
             <artifactId>jfoenix</artifactId>
-            <version>9.0.9</version>
+            <version>8.0.8</version>
         </dependency>
-
         <!-- Utils -->
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
-<!--        <dependency>-->
-<!--            <groupId>org.projectlombok</groupId>-->
-<!--            <artifactId>lombok</artifactId>-->
-<!--            <version>1.18.12</version>-->
-<!--            <scope>provided</scope>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.12</version>
+            <scope>provided</scope>
+        </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>3.9</version>
         </dependency>
         <!-- log4j2 -->
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>2.11.2</version>
-        </dependency>
-        <!-- SLF4J Bridge -->
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-slf4j-impl</artifactId>
-            <version>2.11.2</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.logging.log4j</groupId>-->
+<!--            <artifactId>log4j</artifactId>-->
+<!--            <version>2.11.2</version>-->
+<!--        </dependency>-->
+<!--        &lt;!&ndash; SLF4J Bridge &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.logging.log4j</groupId>-->
+<!--            <artifactId>log4j-slf4j-impl</artifactId>-->
+<!--            <version>2.8</version>-->
+<!--        </dependency>-->
     </dependencies>
 
     <!--BUILD-->
@@ -121,9 +120,9 @@
                 <version>3.8.1</version>
                 <configuration>
                     <encoding>UTF-8</encoding>
-                    <release>11</release>
-                    <source>11</source>
-                    <target>11</target>
+                    <release>1.8</release>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -148,45 +147,45 @@
             <plugin>
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
-                <version>0.0.3</version>
+                <version>0.0.4  </version>
                 <configuration>
                     <mainClass>org.example.App</mainClass>
-                    <options>
-                        <option>--add-modules</option>
-                        <option>javafx.base, javafx.controls, javafx.fxml, javafx.graphics, javafx.media, javafx.swing, javafx.web</option>
+<!--                    <options>-->
+<!--                        <option>&#45;&#45;add-modules</option>-->
+<!--                        <option>javafx.base, javafx.controls, javafx.fxml, javafx.graphics, javafx.media, javafx.swing, javafx.web</option>-->
 
-                        <option>--add-opens</option>
-                        <option>javafx.graphics/javafx.css=ALL-UNNAMED</option>
-                        <option>--add-opens</option>
-                        <option>javafx.base/com.sun.javafx.runtime=ALL-UNNAMED</option>
-                        <option>--add-opens</option>
-                        <option>javafx.controls/com.sun.javafx.scene.control.behavior=ALL-UNNAMED</option>
-                        <option>--add-opens</option>
-                        <option>javafx.controls/com.sun.javafx.scene.control=ALL-UNNAMED</option>
-                        <option>--add-opens</option>
-                        <option>javafx.base/com.sun.javafx.binding=ALL-UNNAMED</option>
-                        <option>--add-opens</option>
-                        <option>javafx.base/com.sun.javafx.event=ALL-UNNAMED</option>
-                        <option>--add-opens</option>
-                        <option>javafx.graphics/com.sun.javafx.stage=ALL-UNNAMED</option>
-                        <option>--add-opens</option>
-                        <option>javafx.controls/com.sun.javafx.scene.control.behavior=com.jfoenix</option>
-                        <option>--add-opens</option>
-                        <option>javafx.controls/com.sun.javafx.scene.control=com.jfoenix</option>
+<!--                        <option>&#45;&#45;add-opens</option>-->
+<!--                        <option>javafx.graphics/javafx.css=ALL-UNNAMED</option>-->
+<!--                        <option>&#45;&#45;add-opens</option>-->
+<!--                        <option>javafx.base/com.sun.javafx.runtime=ALL-UNNAMED</option>-->
+<!--                        <option>&#45;&#45;add-opens</option>-->
+<!--                        <option>javafx.controls/com.sun.javafx.scene.control.behavior=ALL-UNNAMED</option>-->
+<!--                        <option>&#45;&#45;add-opens</option>-->
+<!--                        <option>javafx.controls/com.sun.javafx.scene.control=ALL-UNNAMED</option>-->
+<!--                        <option>&#45;&#45;add-opens</option>-->
+<!--                        <option>javafx.base/com.sun.javafx.binding=ALL-UNNAMED</option>-->
+<!--                        <option>&#45;&#45;add-opens</option>-->
+<!--                        <option>javafx.base/com.sun.javafx.event=ALL-UNNAMED</option>-->
+<!--                        <option>&#45;&#45;add-opens</option>-->
+<!--                        <option>javafx.graphics/com.sun.javafx.stage=ALL-UNNAMED</option>-->
+<!--                        <option>&#45;&#45;add-opens</option>-->
+<!--                        <option>javafx.controls/com.sun.javafx.scene.control.behavior=com.jfoenix</option>-->
+<!--                        <option>&#45;&#45;add-opens</option>-->
+<!--                        <option>javafx.controls/com.sun.javafx.scene.control=com.jfoenix</option>-->
 
-                        <option>--add-exports</option>
-                        <option>javafx.controls/com.sun.javafx.scene.control.behavior=com.jfoenix</option>
-                        <option>--add-exports</option>
-                        <option>javafx.controls/com.sun.javafx.scene.control=com.jfoenix</option>
-                        <option>--add-exports</option>
-                        <option>javafx.base/com.sun.javafx.binding=com.jfoenix</option>
-                        <option>--add-exports</option>
-                        <option>javafx.graphics/com.sun.javafx.stage=com.jfoenix</option>
-                        <option>--add-exports</option>
-                        <option>javafx.base/com.sun.javafx.event=com.jfoenix</option>
+<!--                        <option>&#45;&#45;add-exports</option>-->
+<!--                        <option>javafx.controls/com.sun.javafx.scene.control.behavior=com.jfoenix</option>-->
+<!--                        <option>&#45;&#45;add-exports</option>-->
+<!--                        <option>javafx.controls/com.sun.javafx.scene.control=com.jfoenix</option>-->
+<!--                        <option>&#45;&#45;add-exports</option>-->
+<!--                        <option>javafx.base/com.sun.javafx.binding=com.jfoenix</option>-->
+<!--                        <option>&#45;&#45;add-exports</option>-->
+<!--                        <option>javafx.graphics/com.sun.javafx.stage=com.jfoenix</option>-->
+<!--                        <option>&#45;&#45;add-exports</option>-->
+<!--                        <option>javafx.base/com.sun.javafx.event=com.jfoenix</option>-->
 
 
-                    </options>
+<!--                    </options>-->
                 </configuration>
             </plugin>
         </plugins>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.*?>
+<?import com.calendarfx.*?>
+<?import com.dlsc.*?>
+<?import org.controlsfx.*?>
+<?import org.kordamp.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+
+<Scene xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <Group>
+      <children>
+         <BorderPane prefHeight="500.0" prefWidth="808.0">
+            <bottom>
+               <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                 <buttons>
+                   <Button mnemonicParsing="false" text="Home" />
+                     <Button layoutX="735.0" layoutY="17.0" mnemonicParsing="false" text="Calendar" />
+                     <Button layoutX="735.0" layoutY="17.0" mnemonicParsing="false" text="Taska" />
+                     <Button layoutX="735.0" layoutY="17.0" mnemonicParsing="false" text="Notepad" />
+                     <Button layoutX="735.0" layoutY="17.0" mnemonicParsing="false" text="Chill" />
+                     <SplitPane prefHeight="40.0" prefWidth="200.0">
+                       <items>
+                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="38.0" prefWidth="86.0" />
+                       </items>
+                     </SplitPane>
+                     <Button layoutX="735.0" layoutY="17.0" mnemonicParsing="false" text="Button" />
+                     <Button layoutX="735.0" layoutY="17.0" mnemonicParsing="false" text="Button" />
+                     <Button layoutX="645.0" layoutY="17.0" mnemonicParsing="false" text="Button" />
+                     <Button layoutX="630.0" layoutY="17.0" mnemonicParsing="false" text="Button" />
+                 </buttons>
+               </ButtonBar>
+            </bottom>
+            <right>
+               <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+
+               </VBox>
+            </right>
+            <top>
+               <FlowPane BorderPane.alignment="CENTER">
+
+               </FlowPane>
+            </top>
+         </BorderPane>
+      </children></Group>
+</Scene>

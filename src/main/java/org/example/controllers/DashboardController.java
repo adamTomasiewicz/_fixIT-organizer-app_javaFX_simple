@@ -21,7 +21,7 @@ public class DashboardController {
     }
     @FXML
     public void dialogAddTask() {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/dialog-add-task.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/dialogAddTask.fxml"));
         try {
            BorderPane borderPane = loader.load();
             Scene scene = new Scene(borderPane);
@@ -37,7 +37,7 @@ public class DashboardController {
     }
     @FXML
     public void dialogAddNote() {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/dialog-add-note.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/dialogAddNote.fxml"));
         try {
             BorderPane stackPane = loader.load();
             Scene scene = new Scene(stackPane);
@@ -54,7 +54,7 @@ public class DashboardController {
 
     @FXML
     public void sceneDashboard() {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/scene-dashboard.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/sceneDashboard.fxml"));
         try {
             BorderPane stackPane = loader.load();
             Scene scene = new Scene(stackPane);
@@ -67,8 +67,9 @@ public class DashboardController {
             e.printStackTrace();
         }
     }
+    @FXML
     public void sceneNotepad() {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/scene-notepad.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/sceneNotepad.fxml"));
         try {
             BorderPane stackPane = loader.load();
             Scene scene = new Scene(stackPane);
@@ -81,8 +82,9 @@ public class DashboardController {
             e.printStackTrace();
         }
     }
+    @FXML
     public void sceneCalendar() {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/scene-calendar.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/sceneCalendar.fxml"));
         try {
             BorderPane stackPane = loader.load();
             Scene scene = new Scene(stackPane);

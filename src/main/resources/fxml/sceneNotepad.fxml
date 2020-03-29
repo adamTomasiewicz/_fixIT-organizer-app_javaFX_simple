@@ -14,10 +14,10 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.conrollers.FXMLDocumentController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.DashboardController">
     <center>
         <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" > <!-- stylesheets="@/static/grey.css"-->
-<!--        CALENDAR FX    -->
+            <!--        CALENDAR FX    -->
         </AnchorPane>
     </center>
     <top>
@@ -53,7 +53,7 @@
     <bottom>
         <AnchorPane prefHeight="39.0" prefWidth="900.0" BorderPane.alignment="CENTER">
             <children>
-                <JFXButton buttonType="RAISED" layoutX="796.0" layoutY="12.0" ripplerFill="#a7a4a4" text="Calendar" underline="true">
+                <JFXButton buttonType="RAISED" onAction="#sceneCalendar" layoutX="796.0" layoutY="12.0" ripplerFill="#a7a4a4" text="Calendar" underline="true">
                     <cursor>
                         <Cursor fx:constant="HAND" />
                     </cursor>
@@ -61,7 +61,7 @@
                         <Glow />
                     </effect>
                 </JFXButton>
-                <JFXButton buttonType="RAISED" layoutX="706.0" layoutY="12.0" ripplerFill="#a7a4a4" text="Notepad" underline="true">
+                <JFXButton buttonType="RAISED" onAction="#sceneNotepad" layoutX="706.0" layoutY="12.0" ripplerFill="#a7a4a4" text="Notepad" underline="true">
                     <cursor>
                         <Cursor fx:constant="HAND" />
                     </cursor>
@@ -69,7 +69,7 @@
                         <Glow />
                     </effect>
                 </JFXButton>
-                <JFXButton buttonType="RAISED" layoutX="600.0" layoutY="12.0" ripplerFill="#a7a4a4" text="Dashboard" underline="true">
+                <JFXButton buttonType="RAISED" onAction="#sceneDashboard" layoutX="600.0" layoutY="12.0" ripplerFill="#a7a4a4" text="Dashboard" underline="true">
                     <cursor>
                         <Cursor fx:constant="HAND" />
                     </cursor>

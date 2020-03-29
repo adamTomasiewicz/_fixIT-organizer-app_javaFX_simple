@@ -14,33 +14,10 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.DashboardController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.CalendarController">
     <center>
-        <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0"> <!-- stylesheets="@/static/grey.css"-->
-            <children>
-                <JFXListView layoutX="27.0" layoutY="272.0" prefHeight="226.0" prefWidth="120.0" />
-                <JFXCheckBox layoutX="48.0" layoutY="76.0" />
-                <JFXDatePicker layoutX="160.0" layoutY="27.0" />
-                <JFXChipView layoutX="48.0" layoutY="114.0" nodeOrientation="LEFT_TO_RIGHT" prefWidth="160.0" />
-                <JFXTreeTableView layoutX="409.0" layoutY="14.0" prefHeight="230.0" prefWidth="464.0" />
-                <Label layoutX="46.0" layoutY="14.0" prefHeight="18.0" prefWidth="81.0" text="FILERS">
-                    <font>
-                        <Font size="18.0" />
-                    </font></Label>
-                <JFXCheckBox layoutX="142.0" layoutY="76.0" />
-                <Label layoutX="40.0" layoutY="254.0" text="Urgent/Important" />
-                <Label layoutX="446.0" layoutY="254.0" text="not-Urgent/not-Important" />
-                <Label layoutX="319.0" layoutY="254.0" text="not-Urgent/Important" />
-                <Label layoutX="175.0" layoutY="254.0" text="Urgent/not-Important" />
-                <JFXListView layoutX="456.0" layoutY="273.0" prefHeight="226.0" prefWidth="120.0" />
-                <JFXListView layoutX="319.0" layoutY="272.0" prefHeight="226.0" prefWidth="120.0" />
-                <JFXListView layoutX="173.0" layoutY="272.0" prefHeight="226.0" prefWidth="120.0" />
-                <JFXListView layoutX="604.0" layoutY="273.0" prefHeight="226.0" prefWidth="120.0" />
-                <JFXListView layoutX="753.0" layoutY="273.0" prefHeight="226.0" prefWidth="120.0" />
-                <JFXCheckBox layoutX="254.0" layoutY="76.0" />
-                <Label layoutX="631.0" layoutY="255.0" text="Shoping List" />
-                <Label layoutX="772.0" layoutY="255.0" text="Offical Business" />
-            </children>
+        <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" > <!-- stylesheets="@/static/grey.css"-->
+<!--        CALENDAR FX    -->
         </AnchorPane>
     </center>
     <top>
@@ -76,7 +53,7 @@
     <bottom>
         <AnchorPane prefHeight="39.0" prefWidth="900.0" BorderPane.alignment="CENTER">
             <children>
-                <JFXButton buttonType="RAISED" layoutX="796.0" layoutY="12.0" ripplerFill="#a7a4a4" text="Calendar" underline="true">
+                <JFXButton buttonType="RAISED" onAction="#sceneCalendar" layoutX="796.0" layoutY="12.0" ripplerFill="#a7a4a4" text="Calendar" underline="true">
                     <cursor>
                         <Cursor fx:constant="HAND" />
                     </cursor>
@@ -84,7 +61,7 @@
                         <Glow />
                     </effect>
                 </JFXButton>
-                <JFXButton buttonType="RAISED" layoutX="706.0" layoutY="12.0" ripplerFill="#a7a4a4" text="Notepad" underline="true">
+                <JFXButton buttonType="RAISED" onAction="#sceneNotepad" layoutX="706.0" layoutY="12.0" ripplerFill="#a7a4a4" text="Notepad" underline="true">
                     <cursor>
                         <Cursor fx:constant="HAND" />
                     </cursor>
@@ -92,7 +69,7 @@
                         <Glow />
                     </effect>
                 </JFXButton>
-                <JFXButton buttonType="RAISED" layoutX="600.0" layoutY="12.0" ripplerFill="#a7a4a4" text="Dashboard" underline="true">
+                <JFXButton buttonType="RAISED" onAction="#sceneDashboard" layoutX="600.0" layoutY="12.0" ripplerFill="#a7a4a4" text="Dashboard" underline="true">
                     <cursor>
                         <Cursor fx:constant="HAND" />
                     </cursor>
